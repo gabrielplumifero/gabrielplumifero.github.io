@@ -1,0 +1,320 @@
+/* Utilizando el selector universal (apunt a a todos)
+ para realizar el set de CSS*/
+ * {
+  /* se eliminan todos los margin por defecto */
+  margin: 0;
+  /* se eliminan todos los padding por defecto */
+  padding: 0; 
+  /* se elimina el estilo de las listas */
+  list-style-type: none;
+  /* el padding y border se consideran para calcular
+   el tamaño de la caja */
+  box-sizing: border-box;
+  /* se elimina el subrayado de los links <a> */
+  text-decoration: none }
+  
+  /*  body, html { 
+  height: 100%;
+  background-color: rgb(24, 163, 175);
+  background-image: url("../mi_prueba/images/galaxia.jpg");  }*/
+  
+ /* }
+  main {
+    background-image: url("C:/prueba/galaxia.jpg");
+  }*/
+
+
+
+ /* H1 {color:rgb(235, 153, 86); font: size 80px;font-style: italic;}  
+  H2 {color:rgb(84, 149, 162); font: size 40px;font-style: italic;font: color white} */
+
+
+/*-----------------------------------------Arreglos------------------------------------------*/
+.Encabezado img {   /*Recorda que para cambiar el tamaño a la imagen usa la etiqueta img*/
+  width: 10rem;  /*Tamaño de la imagen*/
+  filter: invert(1);  /*Lo que hace el filter es invertir el color en tu caso lo tenias en negro y lo invirtiio a blanco*/
+}
+
+.encabeazdo-titulo { 
+  display: flex;
+  flex-direction: column;
+
+}
+
+.encabeazdo-titulo h1 { 
+  font-size: clamp(1rem, 3.5rem, 10vw); /*Tamaño de la imagen*/
+}
+
+.encabeazdo-titulo h2 { 
+  font-size: clamp(1rem, 2.5rem, 10vw); /*Tamaño de la imagen*/
+}
+
+.encabeazdo-titulo h3 { 
+  font-size: clamp(1rem, 1.5rem, 10vw); /*Tamaño de la imagen*/
+}
+
+
+.fondo{
+  display: flex;
+}
+
+.contenedor_principal{    /*Creo la clase contenedor_principal para modificar el tañano*/
+  height: 80% !important;
+  background-color: rgb(122, 122, 111);
+}
+
+
+
+
+
+.Encabezado
+{
+  color: white;                                                     /*Color de las letras*/
+  background-color: rgb(63, 64, 131);
+  Display:flex;
+  width: 100%;
+  max-height: 20rem;
+  border: 10px solid rgb(163, 114, 23);
+  /*  flex-direction: row; */
+  justify-content: center; /* alineación a lo alto -> vertical */
+  align-items:center;
+ /*  text-align: center;  */
+  background-image: url(../images/big_bang.jpg);
+  background-size: cover;     /*Para que la imagen cubra todo*/
+  cursor:pointer;
+  padding: 10%;
+  gap: 30px;  /*Para que se separe el titulo de la imagen*/
+}
+  
+  /* column: vertical */
+  /* alineación a lo ancho -> horizontal */
+
+
+.Mayor
+  {
+    flex-direction: row;
+    border: 10px solid rgb(163, 114, 23);
+    width: 100%;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+   
+ /*    height: 100%; */
+    /*  display: flex;
+ /*   align-items: center;
+  justify-content: center;*/
+}
+
+.contenedor-centrar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+
+
+.contenedor_principal2
+{
+   width: 400px;
+   border: 30px;
+   height: 100%;
+   display: flex;
+  /*  border-color: chocolate;
+   border: 3px solid orange;*/
+   border-width: 3px;
+   flex-direction: column;  /* column: vertical */
+   justify-content:center; /* alineación a lo alto -> vertical */
+   align-items:center; 
+  /* background-image: url(../images/big_bang.jpg);*/
+  /*  text-align: center;/* alineación a lo ancho -> horizontal c
+  /* gap: 10px;   */
+  background-color: rgb(122, 122, 111);
+  border-radius: 15px; /*Para darle un redondeado a las cajas*/
+  }
+
+
+
+.cabecita 
+  { 
+    Display:flex;  
+    flex-direction: row;
+    margin: 10px;  
+    border: 10px;
+    padding:10%;
+
+   /*  border: 3px solid orange;
+    border-color: blueviolet; */
+  /*   justify-content: center;*/
+    align-items: center;
+    text-align: center;
+   /*  width: 100%; */
+    height: 100px; 
+  }
+
+.Contenido_principal 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid rgb(122, 89, 26);
+
+}  
+
+.contenedor_principal img {
+  width:  40px;
+  height: 40px;
+}
+
+
+.dedo1 {
+  display:flex; 
+  flex-direction: row; 
+}
+.pie {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px; 
+  border: 3px solid orange;
+ /*   flex : 2;
+   display:flex;
+  /*  flex: 100; */
+ /*   flex-direction: row;
+   justify-content:space-around; /* alineación a lo alto -> vertical */
+  /*  align-items:space-around;  */
+  }
+
+  .piechico {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+
+
+
+ /*.flex-father shadow {
+    height: 100px;
+    display:flex;
+    flex-direction: row; 
+    justify-content:space-around;  alineación a lo alto -> vertical 
+    align-items:space-around; 
+  } */
+
+.caja1 {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;  /* column: vertical */
+
+  align-items:center;
+  text-align: center;
+   /*border: 10px;*/
+  /*  border: 3px solid orange;*/
+  /* border-color: blueviolet;*/
+  text-decoration-color: aquamarine;
+  justify-content: space-around;
+  
+}
+
+.caja1 img{     /*Darle un borde blanco a las imagen*/ 
+  padding: 4px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  
+}
+
+
+
+/*Barra de navegacion------------------------------------------------------------*/
+
+.navbar{
+  background-color: rgb(59, 4, 61) !important;
+}
+
+.texto{
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-toggler{
+  background-color: aliceblue !important;
+}
+
+.nav-link{
+  color: aliceblue !important;
+  font-weight: bold !important;
+  font-size: 1.5rem !important;
+}
+
+.navbar-brand{
+  color: aliceblue !important;
+  font-weight: bold !important;
+  font-size: 2rem !important;
+}
+
+
+
+/*Para que se adapte a las pantallas de celulares ------------------------------------*/
+
+@media screen and (max-width: 1740px){
+
+  .contenedor-centrar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;    
+    padding: 3rem;
+  }
+
+  .contenedor_principal {
+    Width:100%;
+  }
+  .caja1 {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+  }
+
+  .fondo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor_principal2
+    {
+      width: 100%;
+     display: flex;
+    }
+  
+}
+
+@media screen and (max-width: 880px){
+  .Encabezado img {   /*Escondo la imagen de la casita cuando el tamaño de pantalla sea menor a 425px*/
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+    .contenedor-centrar{
+      padding:2px;
+      gap: 2px;
+    }
+
+  
+  }
+
+
+
+
+/* <img src="https://raw.githubusercontent.com/InoveAlumnos/pokemon_assets_js/main/assets/025.png"> */
+/* <img src="../mi_prueba/images/inicio.png"  width="50" height="50"></a> */
